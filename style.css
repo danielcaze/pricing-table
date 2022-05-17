@@ -31,11 +31,6 @@ body {
     background-color: var(--page-background);
 }
 
-main {
-    width: 100%;
-    height: 100%;
-}
-
 /* HEADER */
 
 #home::before {
@@ -52,7 +47,7 @@ main {
 
 #home {
     margin-top: 10rem;
-    width: 55.3rem;
+    max-width: 55.3rem;
     margin-inline: auto;
 }
 
@@ -247,12 +242,9 @@ main {
 /* RESPONSIVITY */
 
 @media (max-width: 1150px) {
-    #home::before {
-        height: 200%;
-        background-image: linear-gradient(var(--blue),white);
-    }
 
     .cards {
+        background-image: linear-gradient(var(--blue), white);
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
